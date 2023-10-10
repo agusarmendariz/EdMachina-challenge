@@ -16,6 +16,34 @@ const routes = [
   },
   {
     meta: {
+      title: 'Overview'
+    },
+
+    path: '/overview',
+    name: 'overview',
+    component: () => import('../components/Overview.vue')
+  },
+  {
+    meta: {
+      title: 'Enrollment'
+    },
+
+    path: '/enrollment',
+    name: 'enrollment',
+    component: () => import('../components/Enrollment.vue')
+  },
+  {
+    meta: {
+      title: 'Academic'
+    },
+
+    path: '/academic',
+    name: 'academic',
+    component: () => import('../components/Academic.vue')
+  },
+
+  {
+    meta: {
       title: 'Smart Enroller'
     },
 
