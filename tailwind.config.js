@@ -2,16 +2,19 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
-  ],
+    "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
-      Colors: {
-        'blue-Machina': '#4436FD',
-        'default-link':'#7367F0',
-        'default-text':'#6E6B7B',
+      colors: {
+        blueMachina: '#4436FD',
+        defaultLink:'#7367F0',
+        defaultText:'#6E6B7B',
        
       },
+      fontFamily:{
+        'montserrat':['Montserrat', 'sans-serif']
+      }
     },
   },
   plugins: [],

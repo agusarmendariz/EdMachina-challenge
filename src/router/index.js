@@ -1,11 +1,12 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 
 
 import Home from '../views/Home.vue'
 
 
-const routes = [
-
+const router = createRouter({
+  history:createWebHistory(),
+  routes :[
   {
     meta: {
       title: 'Dashboard'
@@ -14,34 +15,7 @@ const routes = [
     name: 'dashboard',
     component: Home
   },
-  {
-    meta: {
-      title: 'Overview'
-    },
-
-    path: '/overview',
-    name: 'overview',
-    component: () => import('../components/Overview.vue')
-  },
-  {
-    meta: {
-      title: 'Enrollment'
-    },
-
-    path: '/enrollment',
-    name: 'enrollment',
-    component: () => import('../components/Enrollment.vue')
-  },
-  {
-    meta: {
-      title: 'Academic'
-    },
-
-    path: '/academic',
-    name: 'academic',
-    component: () => import('../components/Academic.vue')
-  },
-
+  
   {
     meta: {
       title: 'Smart Enroller'
@@ -100,20 +74,7 @@ const routes = [
     component: () => import('../views/Workflows.vue')
   }
 ]
+})
 
-const router = createRouter({
-    history: createWebHashHistory(),
-    routes: [
-      {
-        path: '/',
-        components: {
-          default: Home,
-          // short for LeftSidebar: LeftSidebar
-          LeftSidebar,
-          // they match the `name` attribute on `<router-view>`
-          RightSidebar,
-        },
-      },
-    ],
-  })
+
 export default router

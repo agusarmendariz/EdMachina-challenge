@@ -1,5 +1,12 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap'); */
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url('../assets/fonts/Montserrat-Medium.ttf');
+} 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Round');
+
